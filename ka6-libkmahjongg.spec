@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		libkmahjongg
 Summary:	libkmahjongg
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	b8f8424878b52c8c730ae91edb2d9f53
+# Source0-md5:	af94cdfd5f31ac7abe7fc8a1c39bd07b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -94,6 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libKMahjongg6.so.*.*
 %{_datadir}/kmahjongglib
 %{_datadir}/qlogging-categories6/libkmahjongg.categories
+%{_datadir}/qlogging-categories6/libkmahjongg.renamecategories
 
 %files devel
 %defattr(644,root,root,755)
