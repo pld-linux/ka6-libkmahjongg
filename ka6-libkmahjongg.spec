@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.12.0
+%define		kdeappsver	24.12.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		libkmahjongg
 Summary:	libkmahjongg
 Name:		ka6-%{kaname}
-Version:	24.12.0
+Version:	24.12.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	e315fe121fcd4fb16f4aca67ef55e393
+# Source0-md5:	bf881acf3c89f18c61e08948f7ccb687
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
